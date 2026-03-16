@@ -1,39 +1,47 @@
 body{
 margin:0;
 font-family:Arial, Helvetica, sans-serif;
-background:#f4f6f8;
+background:linear-gradient(135deg,#e8f0ff,#f3f6ff);
 color:#333;
 text-align:center;
 }
 
 /* Header */
+
 header{
-background:white;
-padding:25px;
-border-bottom:1px solid #ddd;
+background:linear-gradient(135deg,#1e3c72,#2a5298);
+padding:30px;
+border-bottom:3px solid #ffb703;
+color:white;
 }
 
 header h1{
 margin:0;
-font-size:32px;
-color:#222;
+font-size:36px;
+letter-spacing:1px;
 }
 
 header h2{
 margin:5px 0;
-color:#666;
 font-weight:normal;
+opacity:0.9;
 }
 
 header h3{
 margin:0;
-color:#999;
-font-weight:normal;
+opacity:0.8;
 }
 
 /* Cars section */
+
 .cars{
 padding:40px;
+}
+
+.cars h2{
+font-size:28px;
+color:#1e3c72;
+margin-bottom:30px;
 }
 
 .car-container{
@@ -44,18 +52,20 @@ gap:25px;
 }
 
 /* Car card */
+
 .car{
 width:320px;
 background:white;
-border-radius:12px;
-box-shadow:0 4px 12px rgba(0,0,0,0.08);
+border-radius:14px;
+box-shadow:0 8px 25px rgba(0,0,0,0.15);
 padding:15px;
 transition:0.3s;
+border-top:5px solid #2a5298;
 }
 
 .car:hover{
-transform:translateY(-6px);
-box-shadow:0 8px 20px rgba(0,0,0,0.12);
+transform:translateY(-8px) scale(1.02);
+box-shadow:0 15px 35px rgba(0,0,0,0.25);
 }
 
 .car img{
@@ -64,39 +74,55 @@ border-radius:10px;
 }
 
 .car h3{
-margin:10px 0 5px;
-color:#222;
+margin:12px 0 5px;
+color:#1e3c72;
 }
 
 .car p{
-color:#444;
+color:#ff6b35;
 font-weight:bold;
+font-size:18px;
 }
 
 /* Button */
+
 button{
-background:#222;
+background:linear-gradient(135deg,#ff6b35,#ff8c42);
 color:white;
 border:none;
-padding:10px 22px;
-border-radius:6px;
+padding:11px 24px;
+border-radius:8px;
 cursor:pointer;
+font-weight:bold;
+font-size:15px;
+transition:0.3s;
 }
 
 button:hover{
-background:#444;
+background:linear-gradient(135deg,#ff8c42,#ff6b35);
+transform:scale(1.05);
 }
 
 /* Contact */
+
 .contact{
 background:white;
-padding:30px;
+padding:35px;
 margin-top:40px;
-border-top:1px solid #ddd;
+border-top:4px solid #2a5298;
+box-shadow:0 -4px 15px rgba(0,0,0,0.05);
+}
+
+.contact h2{
+color:#1e3c72;
+}
+
+.contact p{
+font-size:16px;
 }
 
 .contact a{
-color:#222;
+color:#ff6b35;
 text-decoration:none;
 font-weight:bold;
 }
